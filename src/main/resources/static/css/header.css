@@ -1,0 +1,21 @@
+button.close {
+    padding-left: 60%;
+    margin-bottom: 1.8%;
+   
+}
+.InUpButton {
+    text-decoration: none;
+    height: 2.99rem;
+     line-height: 1;
+	
+}
+button.Textlink, input[type=button].Textlink, input[type=submit].Textlink, input[type=reset].Textlink, span.Clickable {
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+     padding-right: 30px;
+    margin: 0;
+    color: #fff;;
+    cursor: pointer;
+}

@@ -1,0 +1,354 @@
+[
+ {
+ 	"WebServiceName":"GetTokens",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getToken/",
+ 	"WebServiceData":{"inputData":"{'meta': {'token': 0,'action':'' ,'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'', 'actionName':'' },'data':[{'userName':'%s','userPassword':'%s' }]}"},
+ 	"WebServiceDescription":"To get authenticated token"
+ },
+ {
+ 	"WebServiceName":"GetFriends",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getRefrenceFriends/",
+ 	"WebServiceData":{"inputData":"{'meta': {'token': %s,'action':'' ,'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'', 'actionName':'' },'data':[{'registeruser':%s,'flag':'0' }]}"},
+ 	"WebServiceDescription":"To get Friends"
+ },
+ {
+ 	"WebServiceName":"BlockUser",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/blockUser/",
+    "WebServiceData":{"inputData":"{'meta': {'token': %s,'action':'' ,'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'', 'actionName':'' }, 'data':[{'requestingUserid':%s,'blockUserId':%s,'blockRequestType':'500'}]}"},
+ 	"WebServiceDescription":"To block user"
+ },
+ {
+ 	"WebServiceName":"GetJobs",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getJobs/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'userID':%s}]}"},
+ 	"WebServiceDescription":"To get jobs"
+ },
+ {
+ 	"WebServiceName":"UnblockUser",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/unblockUser/",
+    "WebServiceData":{"inputData":"{'meta': {'token': %s,'action':'' ,'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'', 'actionName':'' }, 'data':[{'requestingUserid':%s,'blockUserId':%s,'blockRequestType':'500'}]}"},
+ 	"WebServiceDescription":"To unblock user"
+ },
+ {
+ 	"WebServiceName":"TakeMyJob",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/takeMyJob/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[{'registerUid':%s}]}"},
+ 	"WebServiceDescription":"To post jobs for friends"
+ },
+ {
+ 	"WebServiceName":"UpdateComment",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateCommentOnJob/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[{'jobID':%s,'userID':%s,'jobComments':%s,'expiryDays':%s,'canDisplayJobByName':%s}]}"},
+ 	"WebServiceDescription":"To update comments on job"
+ },
+ {
+ 	"WebServiceName":"ApplyForJob",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/applyjob/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[{'appliedByUser':%s,'jobRefid':%s}]}"},
+ 	"WebServiceDescription":"To apply job"
+ },
+ {
+ 	"WebServiceName":"SuggestFriendsForJob",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/introduceFriends/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[%s]}"},
+ 	"WebServiceDescription":"To apply job"
+ },
+ {
+ 	"WebServiceName":"UploadResumeService",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/contentUpload/",
+    "WebServiceData":{"inputData":"{'meta': {'token': %s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[{'fileContent': %s ,'fileName': %s ,'associatedID':%s,'fileMimeType':%s}]}"},
+ 	"WebServiceDescription":"To Upload Resume"
+ },
+ {
+ 	"WebServiceName":"PostJobService",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/postNewJob/",
+    "WebServiceData":{"inputData":"{'meta': {'token': %s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction':'','actionName':'' }, 'data':[{'postedBy': %s ,'jobTitle': %s ,'jobReferenceLink':%s,'jobLatitude':%s,'jobLongitude': %s ,'jobLocationName':%s,'jobComments':%s,'jobExperienceMinYears':%s,'jobExperienceMaxYears':%s,'jobVertical': %s ,'jobRole':%s,'jobSkills':%s,'jobMinSalary':%s,'jobMaxSalary':%s,'jobSalaryCurrency': %s,'sponsoredJob':%s,'conductTest':%s,associatedModule:%s,'projectId' : %s,'examId' : %s }]}"},
+ 	"WebServiceDescription":"To Post Job"
+ },
+ {
+ 	"WebServiceName":"TrackRequest",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getInterestedFriendsInmyjobs/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'postedBy':%s}]}"},
+ 	"WebServiceDescription":"To Track Request"
+ },
+ {
+ 	"WebServiceName":"ChangePasswordService",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/changePassword/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'password':%s}]}"},
+ 	"WebServiceDescription":"To Change Password"
+ },
+ {
+ 	"WebServiceName":"Unsubscribe",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/unsubscribe/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':'','action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[]}"},
+ 	"WebServiceDescription":"To Unsubscribe user"
+ },
+ {
+ 	"WebServiceName":"ForgetPassword",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/forgotPassword/",
+    "WebServiceData":{"inputData":"{'meta': {'token':'' ,'userID':'','action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'userName':%s}]}"},
+ 	"WebServiceDescription":"For forget password"
+ },
+ {
+ 	"WebServiceName":"RevokeJob",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/revokeJob/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID': %s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'jobID':%s}]}"},
+ 	"WebServiceDescription":"To Revoke Job"
+ },
+ {
+ 	"WebServiceName":"LineUp",
+    "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getJobApplications/",
+    "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID': %s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'jobID':%s}]}"},
+ 	"WebServiceDescription":"To get all job applications whether applied or posted"
+ },
+  {
+  "WebServiceName":"getSuggestedVideos",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getSuggestedVideos/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': %s,'userID': %s, 'role':'admin'},'data':[{'forValue':%s,'itemType':%s}]}\"}",
+  "WebServiceDescription":"Get Suggested Videos for Company or SKills"
+  },
+  {
+  "WebServiceName":"attachVideo",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/attachVideos/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': %s,'userID': %s, 'role':'admin'},'data':[{'rmID':%s ,'rmStatus':%s,'complexityLevel':%s ,'relvance':%s,'supportedDevice':%s}]}\"}",
+  "WebServiceDescription":"Approve or Disapprove the reference Material"
+  },
+  {
+  "WebServiceName":"getTokenForUploadVideo",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getTokenForUploadVideo/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': %s,'userID': %s, 'role':'admin'},'data':[{'forID':%s , 'forVideoType':%s}]}\"}",
+  "WebServiceDescription":"Get URL & Token to upload the Video on Youtube"
+  },
+  {
+  "WebServiceName":"duplicateJob",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/duplicateJob/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': %s,'userID': %s, 'role':'admin'},'data':[{'jobID':%s , 'requestedBy':'s'}]}\"}",
+  "WebServiceDescription":"Creates a duplicate job ID"
+  },
+  {
+  "WebServiceName":"getSkills",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getSkills/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': %s,'userID': %s, 'role':'admin'},'data':[{'skill':%s}]}\"}",
+  "WebServiceDescription":"Search Skills"
+  },
+  {
+  "WebServiceName":"getCompaniesByName",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getCompaniesByName/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': '%s','userID': '%s', 'role':'admin'},'data':[{'company':'%s'}]}\"}",
+  "WebServiceDescription":"Search Skills"
+  },
+   {
+  "WebServiceName":"enrollCandidate",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/enrollCandidate/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': '','userID': '0', 'role':'admin'},'data':%s}\"}",
+  "WebServiceDescription":"Enroll candidate"
+  },
+   {
+  "WebServiceName":"saveCandidateParentInfo",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateCandidateParentDetails/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': '%s', 'role':'admin'},'data':%s}\"}",
+  "WebServiceDescription":"Save candidate parent info"
+  },
+  {
+  	"WebServiceName":"getTestForSkill",
+  	"WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getSkillTest/",
+  	"WebServiceData":{"inputData":"{'meta': {'token': '%s','userID': '%s', 'role':'admin'},'data':[{'skillid':'%s'}]}"},
+  	"WebServiceDescription":"Get Skill Tests"
+  },
+  {
+  	"WebServiceName":"saveCandidateAnswersData",
+  	"WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/saveCandidateAnswersData/",
+  	"WebServiceData":{"inputData":"{'meta': {'token': '%s','userID': '%s', 'role':'admin'},'data':%s}"},
+ 	"WebServiceDescription":"Save candidate answer data."
+  },
+{
+  "WebServiceName":"saveCandidateMentorInfo",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateCandidateMentorDetails/",
+  "WebServiceData":"{\"inputData\":\"{'meta': {'token': '%s', 'role':'admin'},'data':%s}\"}",
+  "WebServiceDescription":"Save candidate mentor info"
+  },
+  {
+  "WebServiceName":"getTokenForReferenceMaterial",
+  "WebServiceParameterURL":"https://csimplifyit.com/freshersvilla.svc/getTokenForReferenceMaterial/",
+  "WebServicePostData":{"inputData":"{'meta': {'token': '%s','userID': '%s', 'role':'admin'},'data':[{'forType':'%s', 'forContentType':'%s', 'suggestedTitle':'%s' }]}"},
+  "WebServiceDescription":"Get URL & Token to upload the Video on Youtube"
+  },
+  {
+  "WebServiceName":"getCounsellingEvents",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getCounsellingEvents/",
+  "WebServiceData":{"inputData":"{'meta': {'token':'%s' ,'userID':'%s','action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[]}"},
+  "WebServiceDescription":"Provide all counselling events."
+  },
+  {
+  "WebServiceName":"getVideoSkillsWebService",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getSkillsForUser/",
+  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'role':'admin' }, 'data':[{'skill':'java'}]}"},
+  "WebServiceDescription":"Provide skills of all users with video links."
+  }
+  , {
+	  "WebServiceName":"updateSkillWithUrl",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateSkillWithUrl/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'url':%s,'skillList':%s,'latitude':%s,'longitude':%s,'location':%s}]}"},
+	  "WebServiceDescription":"Provide skills of all users with video links."
+  },
+  {
+	  "WebServiceName":"getUsersWithSkillVideos",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getUsersWithSkillVideos/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'skillList':%s,'FromDate':%s}]}"},
+	  "WebServiceDescription":"Provide all users with particular skills."
+  },
+ {
+	  "WebServiceName":"getUploadedVideoForUsers",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getUploadedVideoForUsers/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'role':'admin' }, 'data':[{'FromDate':%s,'forUser':%s}]}"},
+	  "WebServiceDescription":"Provide all video for particular user."
+  },
+ {
+	  "WebServiceName":"generateReport",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/generateReport/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'role':'admin' }, 'data':[{'FromDate':%s,'forUser':%s}]}"},
+	  "WebServiceDescription":"Provide report of the signed in  user."
+  },
+  {
+  "WebServiceName":"sendMessagetoFriend",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/sendMessagetoFriend/",
+  "WebServiceData":{"inputData":"{'meta': {'token':%s},'data':[{'sendBy':%s,'sendTo':%s, 'message':%s, 'messageType':%s }]}"},
+  "WebServiceDescription":"Send chat message to friend"
+  },
+  {
+  "WebServiceName":"getMessagesFromFriend",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getMessagesFromFriend/",
+  "WebServiceData":{"inputData":"{'meta': {'token':%s},'data':[{'myID':%s,'friendID':%s, 'recievedSince':%s }]}"},
+  "WebServiceDescription":"Get chat messages to friend"
+  },
+  
+   {
+  "WebServiceName":"getRefrenceMaterialWIthRmId",
+  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getRefrenceMaterialWIthRmId/",
+  "WebServiceData": {"inputData": "{'meta': {'token':%s,'userID':%s,'role':'admin'},'data':[{'RefrenceId':%s}]}"},
+  "WebServiceDescription":"Get Reference Material with rmId"
+  },
+  {
+   "WebServiceName":"refrenceAssesment",
+   "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/refrenceAssesment/",
+   "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'RefrenceId':%s,'CommunicationLevel':%s,'AtitudeLevel':%s,'TechnicalLevel':%s,'forUser':%s}]}"},
+   "WebServiceDescription":"Provide rating for the videos submitted by particular user."
+  },
+  {
+   "WebServiceName":"getMaterialToReview",
+   "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getMaterialToReview/",
+   "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'skillId':'','forId':''}]}"},
+   "WebServiceDescription":"Provide rating for the videos submitted by particular user."
+  },
+
+   {
+   "WebServiceName":"communicate",
+   "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getMaterialToReview/",
+   "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'skillId':'','forId':''}]}"},
+   "WebServiceDescription":"Provide communication for job."
+},
+  {
+   "WebServiceName":"shareContent",
+   "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/shareContent/",
+   "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'title':%s,'url':%s,'verificationCode':%s,'htmlcontent':%s,'mailto':%s}]}"},
+   "WebServiceDescription":"Provide rating for the videos submitted by particular user."
+
+  },
+   {
+   "WebServiceName":"updateSkillsForUser",
+   "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateSkillsForUser/",
+   "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'skills':%s,'module':%s}]}"},
+   "WebServiceDescription":"Provide rating for the videos submitted by particular user."
+
+  },
+  {
+	  "WebServiceName":"updateAssignment",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/updateAssignment/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{'url':%s,'skillList':%s,'latitude':%s,'longitude':%s,'location':%s}]}"},
+	  "WebServiceDescription":"Provide skills of all users with video links."
+  },
+  {
+	  "WebServiceName":"getModules",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getModule/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName' }, 'data':[{}]}"},
+	  "WebServiceDescription":"Provide different modules for learning."
+  },
+  {
+	  "WebServiceName":"addProject",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/addProject/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'projectName':%s,'startDate':%s ,'endDate':%s,'projectType':%s ,'projectDuration':%s,'projectEffort':%s,'skills':[%s]}]}"},
+	  "WebServiceDescription":"To create a new project."
+  },
+  {
+	  "WebServiceName":"getActiveProject",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getActiveProject/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}}"},
+	  "WebServiceDescription":"Provide activated project."
+  },
+  {
+	  "WebServiceName":"getAvailableResource",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getAvailableResource/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'},'data':[{'skills':[%s]}]}"},
+	  "WebServiceDescription":"Provide Available Resources for skills."
+  },
+  {
+	  "WebServiceName":"getTeamAssignProject",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getTeamAssignProject/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'},'data':[{'projectId':%s}]}"},
+	  "WebServiceDescription":"Provide Available Resources for Project."
+  },
+  {
+	  "WebServiceName":"getUnassignedresourcesForProject",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getUnassignedresourcesForProject/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'},'data':[{'projectId':%s}]}"},
+	  "WebServiceDescription":"Provide Available Resources for Project."
+  },
+  {
+	  "WebServiceName":"assign",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/assign/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'assignToProjectUID':%s,'projectId':%s ,'startDate':%s}]}"},
+	  "WebServiceDescription":"Assign resource for Project."
+  },
+  {
+	  "WebServiceName":"unAssign",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/unAssign/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'assignToProjectUID':%s,'projectId':%s ,'endDate':%s}]}"},
+	  "WebServiceDescription":"UnAssign resource form Project."
+  },
+  {
+	  "WebServiceName":"getUserProjectDetails",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getUserProjectDetails/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'userIdForQuery':%s}]}"},
+	  "WebServiceDescription":"Provide Previous User project details."
+  },
+  {
+	  "WebServiceName":"getSkillMetrices",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getSkillMetrices/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}}"},
+	  "WebServiceDescription":"Provide top 20 skills heving users ."
+  },
+  {
+	  "WebServiceName":"getContentFromSP",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getContentFromSP/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s, 'role':'admin'}, 'data':[{'refrenceId':%s,'projectId':%s,'userId':%s,'skillId':%s,'spName':%s}]}"},
+	  "WebServiceDescription":"Provide content from stored procedure ."
+  },
+  {
+	  "WebServiceName":"referFriend",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/enrollRefCandidate/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName'}, 'data':[{'refChannel': %s ,'refEmail': %s ,'refContactNo': %s  }]}"},
+	  "WebServiceDescription":"Enroll a Refered Friend ."
+  },
+   {
+	  "WebServiceName":"getProjects",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getProjectList/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName'}, 'data':[{'project': %s,'user':%s}]}"},
+	  "WebServiceDescription":"Get Project List ."
+  },
+  {
+	  "WebServiceName":"getProjectsVideo",
+	  "WebServiceUrl":"https://csimplifyit.com/freshersvilla.svc/getVideosAssProject/",
+	  "WebServiceData":{"inputData":"{'meta': {'token':%s ,'userID':%s,'action':'', 'actionName':'', 'validation': 'runthisvalidationonserver', 'previousaction': 'actionName'}, 'data':[{'projectId': %s,'user':%s}]}"},
+	  "WebServiceDescription":"Get Project video List ."
+  }
+ ]
